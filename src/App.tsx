@@ -4,6 +4,7 @@ import { MyRoutes } from "./routes";
 import GlobalStyle from "./styles/global";
 
 import { myTheme } from "./styles/theme/default";
+import { Header } from "./ui/Header";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <BrowserRouter>
         <ThemeProvider theme={myTheme}>
           <GlobalStyle />
-          <header>dashboard</header>
+          <Header />
           <MyRoutes />
           <footer>footer</footer>
         </ThemeProvider>
