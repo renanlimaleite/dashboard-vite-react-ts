@@ -34,8 +34,7 @@
     "vite": "^2.9.9"
   },
   "lint-staged": {
-    "src/**/**": [
-      "yarn lint --fix"
-    ]
+    "*": "echo testing",
+    "src/**/**": "yarn eslint --fix"
   }
 }
