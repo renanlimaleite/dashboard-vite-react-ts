@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import * as S from "./styles"
+import * as S from "./styles";
 
 export function Header() {
   return (
     <S.Header>
       <S.Content>
-            <h1>R3LL</h1>
+        <h1>R3LL</h1>
         <nav>
           <ul>
             <li>
