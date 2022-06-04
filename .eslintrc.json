@@ -9,6 +9,11 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"
     ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -24,7 +29,7 @@
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warning",
+      "react-hooks/exhaustive-deps": 1,
       "react/react-in-jsx-scope": "off",
       "@typescript-eslint/no-non-null-assertion": "off"
     }
