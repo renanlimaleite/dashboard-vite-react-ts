@@ -1,11 +1,8 @@
+import theme from "@/resources/styles/theme";
 import "styled-components";
 
-// and extend them!
+type Theme = typeof theme;
 declare module "styled-components" {
-  export interface DefaultTheme {
-    colors: {
-      background: string;
-      black700: string;
-    };
-  }
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  export interface DefaultTheme extends Theme {}
 }
