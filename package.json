@@ -46,6 +46,6 @@
     "vite": "^2.9.9"
   },
   "lint-staged": {
-    "src/**/**": "yarn eslint --fix"
+    "src/**/*.tsx": "yarn eslint --fix"
   }
 }
