@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import * as S from "./styles";
 
 type HeaderProps = {
-  author: string;
+  author?: string;
 };
 
 export function Header({ author = "Renan" }: HeaderProps) {
