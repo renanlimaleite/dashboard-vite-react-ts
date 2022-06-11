@@ -1,4 +1,4 @@
-import { ComponentMeta } from "@storybook/react";
+import { ComponentMeta, Story } from "@storybook/react";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from ".";
 
@@ -14,4 +14,8 @@ export default {
   ],
 } as ComponentMeta<typeof Header>;
 
-export const Basic = () => <Header />;
+export const Basic: Story = () => <Header author="Teste" />;
+
+Basic.args = {
+  author: "Renan LBL",
+};
