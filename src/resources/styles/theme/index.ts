@@ -3,4 +3,4 @@ export default {
     background: "#e5e5e5",
     black700: "#202020",
   },
-};
+} as const;
